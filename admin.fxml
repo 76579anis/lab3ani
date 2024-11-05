@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<VBox alignment="CENTER" prefHeight="219.0" prefWidth="233.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.lab3.adminController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Button onAction="#onHelloButtonClick" text="Bringing the Data" />
+  <Button onAction="#insert" mnemonicParsing="false" text="insert" />
+  <Button onAction="#update" mnemonicParsing="false" text="Update" />
+  <Button onAction="#delete" mnemonicParsing="false" text="Delete" />
+  <Button onAction="#viewdata" mnemonicParsing="false" text="view data" />
+  <Button onAction="#BackClick" text="Back" />
+  <TextField fx:id="iname"/>
+  <TextField fx:id="iemail" />
+  <TextField fx:id="ipassword"/>
+  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+    <columns>
+      <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+      <TableColumn fx:id="name" prefWidth="75.0" text="name" />
+      <TableColumn fx:id="email" prefWidth="75.0" text="email" />
+      <TableColumn fx:id="password" prefWidth="75.0" text="password" />
+    </columns>
+  </TableView>
+
+</VBox>
